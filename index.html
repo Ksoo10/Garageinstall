@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="garage.css" />
     <link
       rel="preload"
-      href="/Fonts/lato-v25-latin/lato-v25-latin-regular.woff2"
+      href="lato-v25-latin/lato-v25-latin-regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="/Fonts/montserrat-v31-latin/montserrat-v31-latin-800.woff2"
+      href="montserrat-v31-latin/montserrat-v31-latin-800.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -28,7 +28,7 @@
     <header>
       <nav>
         <div class="nav-wrapper">
-          <span class="logo-title">GarageFixers</span>
+          <span class="logo-title">GarageMaster</span>
           <button
             class="menu-toggle"
             aria-label="Toggle Menu"
@@ -43,7 +43,7 @@
             <li class="menu-links">
               <a href="services.html">Services</a>
             </li>
-              <li class="menu-links">
+            <li class="menu-links">
               <a href="services.html">About Us</a>
             </li>
             <li class="menu-links">
@@ -55,297 +55,353 @@
     </header>
 
     <main>
-      <section id="hero">
-        <div class="container-fluid-flex">
-          <div class="hero-wrapper">
-            <h1 class="hero-title">
+      <!-- ============================================ -->
+      <!--                     CTA                      -->
+      <!-- ============================================ -->
+      <section id="cta">
+        <div class="hero-container">
+          <div class="hero-wrapper tx-white">
+            <h1 class="hero-title tx-white">
               Professional Garage Door Services You Can
-              <span class="tx-primary">Trust</span>
+              <span class="tx-light">Trust</span>
             </h1>
             <p class="hero-text">
               Expert repair and installation available 24/7. We secure your home
               with precision mechanical craftsmanship.
             </p>
             <div class="btn-group">
-              <a href="#" class="primary-btn">Book a Free Estimate </a>
+              <a href="#" class="primary-btn">Book a Free Estimate</a>
               <a href="#" class="secondary-btn">View Services</a>
             </div>
           </div>
-          <div class="cs-picture">
-            <picture>
-              <source
-                media="(max-width: 650px)"
-                srcset="assets/REPLACE-ME-hero-image.webp"
-              />
-              <source
-                media="(min-width: 649px)"
-                srcset="assets/REPLACE-ME-hero-image-mobile.webp"
-              />
-              <img
-                src="assets/REPLACE-ME-hero-image-mobile.webp"
-                alt="REPLACE ME - image alt text"
-                loading="eager"
-                decoding="async"
-                width="600"
-                height="600"
-                class="cs-picture"
-              />
-            </picture>
+        </div>
+
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/garage_mobile.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/garage_desktop.webp"
+          />
+          <img
+            src="assets/garage_desktop.webp"
+            width="1024"
+            height="572"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            alt=""
+          />
+        </picture>
+      </section>
+      <!-- Service / Pricing Section -->
+      <section id="service">
+        <div class="container-fluid">
+          <div class="section-wrapper">
+            <h2 class="sec-title">Common Garage Issues We Fix</h2>
+            <p class="sec-text">
+              Our trucks arrive fully stocked with the parts and tools needed to
+              handle common garage door issues, ensuring that most repairs are
+              completed in a single visit.
+            </p>
+          </div>
+          <div class="cardGrid">
+            <div class="cardWrapper">
+              <!-- Card 1 -->
+              <div class="card-base">
+                <div class="wrapper-sm">
+                  <h3 class="card-title">Broken Spring Repair</h3>
+                  <div class="card-wrapper">
+                    <p>
+                      High-tension spring replacement using heavy-duty,
+                      cycle-tested steel components to restore safe and balanced
+                      door operation immediately.
+                    </p>
+                  </div>
+                  <a href="#" class="link-btn">Learn More</a>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card-base">
+                <div class="wrapper-sm">
+                  <h3 class="card-title">Commercial Doors</h3>
+                  <div class="card-wrapper">
+                    <p>
+                      Industrial-grade rolling steel and sectional doors built
+                      to withstand rigorous daily usage and harsh mechanical
+                      environments.
+                    </p>
+                  </div>
+                  <a href="#" class="link-btn">Learn More</a>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card-base">
+                <div class="wrapper-sm">
+                  <h3 class="card-title">Opener Systems</h3>
+                  <div class="card-wrapper">
+                    <p>
+                      Installation and repair of smart, ultra-quiet belt drive
+                      and rugged chain drive motor systems with battery backup
+                      integration.
+                    </p>
+                  </div>
+                  <a href="#" class="link-btn">Learn More</a>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card-base">
+                <div class="wrapper-sm">
+                  <h3 class="card-title">Preventative Maintenance</h3>
+                  <div class="card-wrapper">
+                    <p>
+                      Comprehensive 25-point inspection, track alignment, and
+                      professional lubrication to maximize hardware lifespan and
+                      prevent sudden failures.
+                    </p>
+                  </div>
+                  <a href="#" class="link-btn">Learn More</a>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="card-base">
+                <div class="wrapper-sm">
+                  <h3 class="card-title">Preventative Maintenance</h3>
+                  <div class="card-wrapper">
+                    <p>
+                      Comprehensive 25-point inspection, track alignment, and
+                      professional lubrication to maximize hardware lifespan and
+                      prevent sudden failures.
+                    </p>
+                  </div>
+                  <a href="#" class="link-btn">Learn More</a>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="card-base">
+                <div class="wrapper-sm">
+                  <h3 class="card-title">Preventative Maintenance</h3>
+                  <div class="card-wrapper">
+                    <p>
+                      Comprehensive 25-point inspection, track alignment, and
+                      professional lubrication to maximize hardware lifespan and
+                      prevent sudden failures.
+                    </p>
+                  </div>
+                  <a href="#" class="link-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-us" class="bg-secondary">
+        <div class="wave-shape-divider">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="wrapper-md">
+            <div class="text-wrapper">
+              <h3 class="tx-light">Why Choose Us</h3>
+              <p>
+                Our team of certified technicians is trained to handle all types
+                of garage door systems, ensuring that your home or business
+                remains secure and functional.
+              </p>
+            </div>
+          </div>
+          <div class="col-flex-wrapper">
+            <div class="flex-row-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+                width="40"
+                height="40"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#e58282"
+                  fill-rule="evenodd"
+                  d="M502.691 104.727 258.327 58.182h-4.655L9.309 104.727C3.491 105.891 0 110.545 0 116.364v46.545c0 6.982 4.655 11.636 11.636 11.636h23.273v267.636c0 6.982 4.655 11.636 11.636 11.636H349.09c6.982 0 11.636-4.655 11.636-11.636s-4.655-11.636-11.636-11.636H58.182V162.909c0-6.982-4.655-11.636-11.636-11.636H23.273v-25.6L256 81.455l232.727 44.218v25.6h-23.273c-6.982 0-11.636 4.655-11.636 11.636v267.636h-46.545V186.182c0-6.982-4.655-11.636-11.636-11.636H116.364c-6.982 0-11.636 4.655-11.636 11.636v209.455c0 6.982 4.655 11.636 11.636 11.636S128 402.618 128 395.636V197.818h256v244.364c0 6.982 4.655 11.636 11.636 11.636h69.818c6.982 0 11.636-4.655 11.636-11.636V174.545h23.273c6.982 0 11.636-4.655 11.636-11.636v-46.545c.001-5.819-3.49-10.473-9.308-11.637"
+                />
+                <path
+                  fill="#e58282"
+                  fill-rule="evenodd"
+                  d="M349.091 372.364H162.909c-6.982 0-11.636 4.655-11.636 11.636s4.655 11.636 11.636 11.636h186.182c6.982 0 11.636-4.655 11.636-11.636s-4.654-11.636-11.636-11.636M349.091 279.273H162.909c-6.982 0-11.636 4.655-11.636 11.636s4.655 11.636 11.636 11.636h186.182c6.982 0 11.636-4.655 11.636-11.636s-4.654-11.636-11.636-11.636M349.091 325.818H162.909c-6.982 0-11.636 4.655-11.636 11.636 0 6.982 4.655 11.636 11.636 11.636h186.182c6.982 0 11.636-4.655 11.636-11.636s-4.654-11.636-11.636-11.636M349.091 232.727H162.909c-6.982 0-11.636 4.655-11.636 11.636S155.927 256 162.909 256h186.182c6.982 0 11.636-4.655 11.636-11.636s-4.654-11.637-11.636-11.637"
+                />
+              </svg>
+              <h4 class="tx-light">Family Owned and Operated</h4>
+              <p>
+                As a local family business, we prioritize personalized service
+                and community involvement.
+              </p>
+            </div>
+            <div class="flex-row-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                data-name="Layer 1"
+                viewBox="0 0 52 52"
+              >
+                <path
+                  fill="#e58282"
+                  fill-rule="evenodd"
+                  d="M26 2c3 0 5.43 3.29 8.09 4.42s6.82.51 8.84 2.65 1.51 6.07 2.65 8.84S50 23 50 26s-3.29 5.43-4.42 8.09-.51 6.82-2.65 8.84-6.07 1.53-8.84 2.65S29 50 26 50s-5.43-3.29-8.09-4.42-6.82-.51-8.84-2.65-1.53-6.07-2.65-8.84S2 29 2 26s3.29-5.43 4.42-8.09.51-6.82 2.65-8.84 6.07-1.53 8.84-2.65S23 2 26 2m0 7.58A16.42 16.42 0 1 0 42.42 26 16.47 16.47 0 0 0 26 9.58m7.62 9.15 1.61 1.52a1.25 1.25 0 0 1 0 1.51L25.08 33.07a2.07 2.07 0 0 1-1.61.7 2.23 2.23 0 0 1-1.61-.7l-5.49-5.47a1 1 0 0 1-.1-1.42l.1-.11L18 24.56a1.1 1.1 0 0 1 1.54-.07l.07.07 3.89 4 8.59-9.8a1.1 1.1 0 0 1 1.53-.03"
+                />
+              </svg>
+              <h4 class="tx-light">Quailty Parts Only</h4>
+              <p>
+                We only use high-tension springs and heavy-duty hardware
+                designed for maximum longevity and safety.
+              </p>
+            </div>
+            <div class="flex-row-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 30 30"
+              >
+                <title>tools</title>
+                <path
+                  fill="#e58282"
+                  fill-rule="evenodd"
+                  d="M25.884 14.281c-2.299 2.294-5.755 2.677-8.478 1.213L5.556 27.322c-.802.8-2.102.8-2.905 0a2.05 2.05 0 0 1 0-2.898l11.852-11.828c-1.465-2.716-1.081-6.163 1.217-8.457 1.378-1.375 3.176-2.029 4.981-2.051a5.11 5.11 0 0 0 .101 7.123c1.966 1.962 5.124 1.987 7.136.1-.022 1.801-.676 3.595-2.054 4.97m3.275-8.911c-.506.568-1.346 1.291-2.55 2.392-1.275 1.272-3.08 1.272-4.355 0-1.276-1.274-1.276-3.074 0-4.347C23.429 2.242 24.692.853 24.672.847c-3.415-1.573-7.59-.965-10.404 1.843-2.565 2.559-3.296 6.245-2.217 9.456L1.2 22.976a4.09 4.09 0 0 0 0 5.795 4.114 4.114 0 0 0 5.808 0l10.85-10.829c3.22 1.079 6.913.347 9.478-2.212 2.81-2.805 3.394-6.955 1.823-10.36"
+                />
+              </svg>
+              <h4 class="tx-light">Warranty Guaranteed</h4>
+              <p>
+                Rest easy with our comprehensive labor and parts warranty on
+                every installation and repair job.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="wave-shape-bottom">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="section-wrapper">
+          <h4 class="sec-title">Common Questions</h4>
+          <p class="sec-text">
+            Clear answers about the process, pricing, and what to expect.
+          </p>
+        </div>
+        <div class="accordion-wrapper">
+          <details name="exclusive">
+            <summary>How long does it take?</summary>
+            <div class="details-wrapper">
+              <p>
+                Most sites are live within 7 business days after discovery is
+                complete and content is received. We'll always give you a clear
+                timeline before we start.
+              </p>
+            </div>
+          </details>
+          <details name="exclusive">
+            <summary>How are the sites built?</summary>
+            <div class="details-wrapper">
+              <p>
+                Every site is 100% hand-coded with HTML, CSS, and JavaScript.
+                That means faster load times, cleaner structure, and no
+                dependency on plugins or platforms that break.
+              </p>
+            </div>
+          </details>
+          <details name="exclusive">
+            <summary>What is on-page SEO?</summary>
+            <div class="details-wrapper">
+              <p>
+                It's the foundation that helps search engines understand your
+                business — page titles, headings, meta descriptions, and
+                structure. Without it, your site is invisible. With it, local
+                customers can actually find you.
+              </p>
+            </div>
+          </details>
+          <details name="exclusive">
+            <summary>Is hosting included?</summary>
+            <div class="details-wrapper">
+              <p>
+                Yes. Hosting and domain setup are included in every package. We
+                handle the technical setup so you don't have to think about it.
+              </p>
+            </div>
+          </details>
+          <details name="exclusive">
+            <summary>What counts as an edit?</summary>
+            <div class="details-wrapper">
+              <p>
+                Edits include text changes, image swaps, contact info updates,
+                button fixes, and minor section adjustments. New pages,
+                redesigns, and custom features are quoted separately.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div class="container">
+          <div class="wrapper-md-custom">
+            <h3 class="tx-light">Need an Assessment?</h3>
+            <p>
+              Schedule a thorough mechanical inspection of your current system.
+            </p>
+            <div class="btn-group-wrapper">
+              <a href="#" class="primary-btn">Schedule Inspection</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- Service / Pricing Section -->
-    <section id="service">
-      <div class="wave-shape-divider">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-      <div class="container-fluid">
-        <div class="section-wrapper">
-          <h2 class="sec-title">Common Garage Issues We Fix</h2>
-          <p class="sec-text">
-            Our trucks arrive fully stocked to handle most repairs in a single
-            visit.
-          </p>
-        </div>
-        <div class="cardGrid">
-          <div class="cardWrapper">
-            <!-- Card 1 -->
-            <div class="card-base">
-              <div class="wrapper-sm">
-                <h3 class="card-title">Broken Spring Repair</h3>
-                <div class="card-wrapper">
-                  <p>
-                    High-tension spring replacement using heavy-duty,
-                    cycle-tested steel components to restore safe and balanced
-                    door operation immediately.
-                  </p>
-                </div>
-                <a href="#" class="link-btn">Learn More</a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="card-base">
-              <div class="wrapper-sm">
-                <h3 class="card-title">Commercial Doors</h3>
-                <div class="card-wrapper">
-                  <p>
-                    Industrial-grade rolling steel and sectional doors built to
-                    withstand rigorous daily usage and harsh mechanical
-                    environments.
-                  </p>
-                </div>
-                <a href="#" class="link-btn">Learn More</a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card-base">
-              <div class="wrapper-sm">
-                <h3 class="card-title">Opener Systems</h3>
-                <div class="card-wrapper">
-                  <p>
-                    Installation and repair of smart, ultra-quiet belt drive and
-                    rugged chain drive motor systems with battery backup
-                    integration.
-                  </p>
-                </div>
-                <a href="#" class="link-btn">Learn More</a>
-              </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card-base">
-              <div class="wrapper-sm">
-                <h3 class="card-title">Preventative Maintenance</h3>
-                <div class="card-wrapper">
-                  <p>
-                    Comprehensive 25-point inspection, track alignment, and
-                    professional lubrication to maximize hardware lifespan and
-                    prevent sudden failures.
-                  </p>
-                </div>
-                <a href="#" class="link-btn">Learn More</a>
-              </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="card-base">
-              <div class="wrapper-sm">
-                <h3 class="card-title">Preventative Maintenance</h3>
-                <div class="card-wrapper">
-                  <p>
-                    Comprehensive 25-point inspection, track alignment, and
-                    professional lubrication to maximize hardware lifespan and
-                    prevent sudden failures.
-                  </p>
-                </div>
-                <a href="#" class="link-btn">Learn More</a>
-              </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="card-base">
-              <div class="wrapper-sm">
-                <h3 class="card-title">Preventative Maintenance</h3>
-                <div class="card-wrapper">
-                  <p>
-                    Comprehensive 25-point inspection, track alignment, and
-                    professional lubrication to maximize hardware lifespan and
-                    prevent sudden failures.
-                  </p>
-                </div>
-                <a href="#" class="link-btn">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="wrapper-md">
-          <div class="text-wrapper">
-            <p>
-              We combine local values with induestrial-grade mechanical
-              expertise to deliver a service experience that is fast, reliable,
-              and affordable. Our team of certified technicians is trained to
-              handle all types of garage door systems, ensuring that your home
-              or business remains secure and functional.
-            </p>
-          </div>
-        </div>
-        <div class="col-flex-wrapper">
-          <div class="flex-row-item">
-            <h4 class="tx-primary">Family Owned and Operated</h4>
-            <p>
-              As a local family business, we prioritize personalized service and
-              community involvement.
-            </p>
-          </div>
-          <div class="flex-row-item">
-            <h4 class="tx-primary">Family Owned and Operated</h4>
-            <p>
-              As a local family business, we prioritize personalized service and
-              community involvement.
-            </p>
-          </div>
-          <div class="flex-row-item">
-            <h4 class="tx-primary">Family Owned and Operated</h4>
-            <p>
-              As a local family business, we prioritize personalized service and
-              community involvement.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="section-wrapper">
-        <h4 class="sec-title">Common Questions</h4>
-        <p class="sec-text">
-          Clear answers about the process, pricing, and what to expect.
-        </p>
-      </div>
-      <div class="accordion-wrapper">
-        <details name="exclusive">
-          <summary>How long does it take?</summary>
-          <div class="details-wrapper">
-            <p>
-              Most sites are live within 7 business days after discovery is
-              complete and content is received. We'll always give you a clear
-              timeline before we start.
-            </p>
-          </div>
-        </details>
-        <details name="exclusive">
-          <summary>How are the sites built?</summary>
-          <div class="details-wrapper">
-            <p>
-              Every site is 100% hand-coded with HTML, CSS, and JavaScript. That
-              means faster load times, cleaner structure, and no dependency on
-              plugins or platforms that break.
-            </p>
-          </div>
-        </details>
-        <details name="exclusive">
-          <summary>What is on-page SEO?</summary>
-          <div class="details-wrapper">
-            <p>
-              It's the foundation that helps search engines understand your
-              business — page titles, headings, meta descriptions, and
-              structure. Without it, your site is invisible. With it, local
-              customers can actually find you.
-            </p>
-          </div>
-        </details>
-        <details name="exclusive">
-          <summary>Is hosting included?</summary>
-          <div class="details-wrapper">
-            <p>
-              Yes. Hosting and domain setup are included in every package. We
-              handle the technical setup so you don't have to think about it.
-            </p>
-          </div>
-        </details>
-        <details name="exclusive">
-          <summary>What counts as an edit?</summary>
-          <div class="details-wrapper">
-            <p>
-              Edits include text changes, image swaps, contact info updates,
-              button fixes, and minor section adjustments. New pages, redesigns,
-              and custom features are quoted separately.
-            </p>
-          </div>
-        </details>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="wrapper-md-custom">
-          <h3 class="tx-light">Need an Assessment?</h3>
-          <p>
-            Schedule a thorough mechanical inspection of your current system.
-          </p>
-          <a href="#" class="primary-btn">Schedule Inspection</a>
-        </div>
-      </div>
-    </section>
-
     <footer class="site-footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-brand">
-            <h3 class="footer-title">REPLACE ME - Business Name</h3>
-            <p class="footer-text">REPLACE ME - Footer tagline</p>
+            <h3 class="footer-title">GarageMaster</h3>
+            <p class="footer-text">
+              Fixing and Installing Garages through Delaware
+            </p>
           </div>
           <div class="footer-nav">
             <h4 class="footer-heading">Quick Links</h4>
             <ul class="footer-links">
-              <li><a href="index.html">REPLACE ME - Link 1</a></li>
-              <li><a href="#service">REPLACE ME - Link 2</a></li>
-              <li><a href="#process">REPLACE ME - Link 3</a></li>
-              <li><a href="#faq">REPLACE ME - Link 4</a></li>
-              <li><a href="#contact">REPLACE ME - Link 5</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#process">Contact</a></li>
+              <li><a href="#faq">Careers</a></li>
             </ul>
           </div>
           <div class="footer-contact">
             <h4 class="footer-heading">Contact</h4>
             <ul class="footer-links">
               <li>
-                <a href="mailto:REPLACE-ME@example.com"
-                  >REPLACE ME - Email Address</a
-                >
+                <a href="mailto:REPLACE-ME@example.com">contact@garagemaster</a>
               </li>
-              <li><a href="tel:REPLACEME">REPLACE ME - Phone Number</a></li>
-              <li>REPLACE ME - City, State</li>
+              <li><a href="tel:REPLACEME">888-222-3456</a></li>
+              <li>GarageMaster - Wilmington, Delaware</li>
             </ul>
           </div>
         </div>
