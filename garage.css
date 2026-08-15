@@ -448,6 +448,10 @@ details[open] {
 details[open] summary {
   margin-bottom: 0.5em;
 }
+details[open] summary::after {
+  content: "−";
+}
+
 /*Accordion Styling*/
 
 /* Footer */
