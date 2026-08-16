@@ -70,7 +70,6 @@
 }
 html {
   scroll-behavior: smooth;
-  color-scheme: light dark;
   hanging-punctuation: first last;
 }
 
@@ -643,6 +642,7 @@ li.menu-links {
     transform: translateY(0);
     pointer-events: auto;
     z-index: 1000;
+    margin:0 auto;
   }
 }
 
