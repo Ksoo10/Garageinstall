@@ -7,24 +7,65 @@
       content="REPLACE ME - meta description (business type + location)"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REPLACE ME - Page Title</title>
+    <title>GarageMaster</title>
+    <style>
+      #hero {
+        position: relative;
+        overflow: hidden;
+        isolation: isolate; 
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: 2; 
+          pointer-events: none;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.25)
+          );
+        }
+      }
+
+      #hero picture {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          display: block;
+        }
+      }
+
+      .hero-container {
+        position: relative;
+        z-index: 3; 
+      }
+    </style>
     <link rel="stylesheet" href="garage.css" />
     <link
       rel="preload"
-      href="assets/lato-v25-latin/lato-v25-latin-regular.woff2"
+      href="/assets/lato-v25-latin/lato-v25-latin-regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="assets/montserrat-v31-latin/montserrat-v31-latin-800.woff2"
+      href="/assets/montserrat-v31-latin/montserrat-v31-latin-800.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
   </head>
- <body>
+  <body>
     <header>
       <nav>
         <div class="nav-wrapper">
@@ -36,7 +77,7 @@
           >
             ☰
           </button>
-                     <ul class="nav-links">
+          <ul class="nav-links">
             <li class="menu-links">
               <a href="index.html">Home</a>
             </li>
@@ -51,7 +92,6 @@
             </li>
           </ul>
         </div>
- 
       </nav>
     </header>
 
@@ -60,7 +100,7 @@
       <!--                     CTA                      -->
       <!-- ============================================ -->
 
-      <section id="cta">
+      <section id="hero">
         <div class="hero-container">
           <div class="hero-wrapper tx-white">
             <h1 class="hero-title tx-white">
@@ -72,7 +112,7 @@
               with precision mechanical craftsmanship.
             </p>
             <div class="btn-group">
-              <a href="#" class="primary-btn">Book a Free Estimate</a>
+              <a href="#faq" class="primary-btn">Book a Free Estimate</a>
               <a href="#" class="secondary-btn">View Services</a>
             </div>
           </div>
@@ -81,14 +121,14 @@
         <picture>
           <source
             media="(max-width: 600px)"
-            srcset="assets/garage_mobile.webp"
+            srcset="/garage_mobile.webp"
           />
           <source
             media="(min-width: 601px)"
-            srcset="assets/garage_desktop.webp"
+            srcset="/garage_desktop.webp"
           />
           <img
-            src="assets/garage_desktop.webp"
+            src="/garage_desktop.webp"
             width="1024"
             height="572"
             fetchpriority="high"
@@ -102,24 +142,27 @@
       <section id="service">
         <div class="container-fluid">
           <div class="section-wrapper">
-            <h2 class="sec-title">Common Garage Issues We Fix</h2>
-            <p class="sec-text">
-              Our trucks arrive fully stocked with the parts and tools needed to
-              handle common garage door issues, ensuring that most repairs are
-              completed in a single visit.
-            </p>
+            <h2 class="sec-title">Garage Door Repairs & Installations</h2>
+            <div class="small-wrapper">
+              <p class="sec-text">
+                From broken springs and malfunctioning openers to complete
+                garage door replacements, we provide dependable solutions for
+                homes throughout New Castle County. Enjoy safe, smooth, reliable
+                access to your garage without the hassle.
+              </p>
+            </div>
           </div>
           <div class="cardGrid">
             <div class="cardWrapper">
               <!-- Card 1 -->
               <div class="card-base">
                 <div class="wrapper-sm">
-                  <h3 class="card-title">Broken Spring Repair</h3>
+                  <h3 class="card-title">Spring Repair & Replacement</h3>
                   <div class="card-wrapper">
                     <p>
-                      High-tension spring replacement using heavy-duty,
-                      cycle-tested steel components to restore safe and balanced
-                      door operation immediately.
+                      Broken or worn garage door springs can make your door
+                      difficult and unsafe to operate. We replace damaged
+                      springs and restore smooth, reliable movement.
                     </p>
                   </div>
                   <a href="#" class="link-btn">Learn More</a>
@@ -128,12 +171,12 @@
               <!-- Card 2 -->
               <div class="card-base">
                 <div class="wrapper-sm">
-                  <h3 class="card-title">Commercial Doors</h3>
+                  <h3 class="card-title">Garage Door Opener Services</h3>
                   <div class="card-wrapper">
                     <p>
-                      Industrial-grade rolling steel and sectional doors built
-                      to withstand rigorous daily usage and harsh mechanical
-                      environments.
+                      If your opener is unresponsive, noisy, or unreliable, we
+                      can help. We repair and install openers, remotes, keypads,
+                      and safety sensors.
                     </p>
                   </div>
                   <a href="#" class="link-btn">Learn More</a>
@@ -142,12 +185,12 @@
               <!-- Card 3 -->
               <div class="card-base">
                 <div class="wrapper-sm">
-                  <h3 class="card-title">Opener Systems</h3>
+                  <h3 class="card-title">Off Track Door Repair</h3>
                   <div class="card-wrapper">
                     <p>
-                      Installation and repair of smart, ultra-quiet belt drive
-                      and rugged chain drive motor systems with battery backup
-                      integration.
+                      A garage door that has come off track can become stuck or
+                      uneven. We safely realign the door, repair the hardware,
+                      and get it working properly again.
                     </p>
                   </div>
                   <a href="#" class="link-btn">Learn More</a>
@@ -156,12 +199,13 @@
               <!-- Card 4 -->
               <div class="card-base">
                 <div class="wrapper-sm">
-                  <h3 class="card-title">Preventative Maintenance</h3>
+                  <h3 class="card-title">Garage Door Panel Repair</h3>
                   <div class="card-wrapper">
                     <p>
-                      Comprehensive 25-point inspection, track alignment, and
-                      professional lubrication to maximize hardware lifespan and
-                      prevent sudden failures.
+                      Dented, cracked, or weather damaged panels can affect
+                      security and curb appeal. We repair individual sections
+                      when possible and help you choose replacement options when
+                      needed.
                     </p>
                   </div>
                   <a href="#" class="link-btn">Learn More</a>
@@ -170,12 +214,12 @@
               <!-- Card 5 -->
               <div class="card-base">
                 <div class="wrapper-sm">
-                  <h3 class="card-title">Preventative Maintenance</h3>
+                  <h3 class="card-title">New Garage Door Installation</h3>
                   <div class="card-wrapper">
                     <p>
-                      Comprehensive 25-point inspection, track alignment, and
-                      professional lubrication to maximize hardware lifespan and
-                      prevent sudden failures.
+                      Choose a durable garage door that complements your home
+                      and handles everyday use. Our professional installation
+                      gives you dependable operation from day one.
                     </p>
                   </div>
                   <a href="#" class="link-btn">Learn More</a>
@@ -184,12 +228,13 @@
               <!-- Card 6 -->
               <div class="card-base">
                 <div class="wrapper-sm">
-                  <h3 class="card-title">Preventative Maintenance</h3>
+                  <h3 class="card-title">Garage Door Replacement</h3>
                   <div class="card-wrapper">
                     <p>
-                      Comprehensive 25-point inspection, track alignment, and
-                      professional lubrication to maximize hardware lifespan and
-                      prevent sudden failures.
+                      When repairs no longer make sense, a new garage door can
+                      improve your home’s appearance, security, and energy
+                      efficiency. We make the replacement process simple from
+                      selection through installation.
                     </p>
                   </div>
                   <a href="#" class="link-btn">Learn More</a>
@@ -217,11 +262,13 @@
           <div class="wrapper-md">
             <div class="text-wrapper">
               <h3 class="tx-light">Why Choose Us</h3>
-              <p>
-                Our team of certified technicians is trained to handle all types
-                of garage door systems, ensuring that your home or business
-                remains secure and functional.
-              </p>
+              <div class="small-wrapper">
+                <p>
+                  Our team of certified technicians is trained to handle all
+                  types of garage door systems, ensuring that your home or
+                  business remains secure and functional.
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-flex-wrapper">
@@ -292,7 +339,7 @@
             </div>
           </div>
         </div>
-                <div class="wave-shape-bottom">
+        <div class="wave-shape-bottom">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -307,81 +354,139 @@
         </div>
       </section>
       <section id="faq">
-
         <div class="section-wrapper">
-          <h4 class="sec-title">Common Questions</h4>
-          <p class="sec-text">
-            Clear answers about the process, pricing, and what to expect.
-          </p>
+          <h4 class="sec-title">Garage Door Questions, Answered</h4>
+          <div class="small-wrapper">
+            <p class="sec-text">
+              Get clear answers about garage door repairs, replacements,
+              installations, openers, and more. If you do not see your question
+              here, contact our team for straightforward help.
+            </p>
+          </div>
         </div>
         <div class="accordion-wrapper">
           <details name="exclusive">
-            <summary>How long does it take?</summary>
+            <summary>Why will my garage door not open or close?</summary>
             <div class="details-wrapper">
               <p>
-                Most sites are live within 7 business days after discovery is
-                complete and content is received. We'll always give you a clear
-                timeline before we start.
+                The issue may be a broken spring, malfunctioning opener,
+                misaligned safety sensors, damaged track, or worn hardware. A
+                professional inspection can identify the cause and recommend the
+                right repair.
               </p>
             </div>
           </details>
           <details name="exclusive">
-            <summary>How are the sites built?</summary>
+            <summary>
+              What should I do if my garage door comes off track?
+            </summary>
             <div class="details-wrapper">
               <p>
-                Every site is 100% hand-coded with HTML, CSS, and JavaScript.
-                That means faster load times, cleaner structure, and no
-                dependency on plugins or platforms that break.
+                Stop using the door immediately. Continuing to run the opener
+                can cause more damage to the tracks, rollers, cables, and
+                panels. A technician can safely reset the door, inspect the
+                system, and repair the underlying cause..
               </p>
             </div>
           </details>
           <details name="exclusive">
-            <summary>What is on-page SEO?</summary>
+            <summary>How long does a garage door installation take</summary>
             <div class="details-wrapper">
               <p>
-                It's the foundation that helps search engines understand your
-                business — page titles, headings, meta descriptions, and
-                structure. Without it, your site is invisible. With it, local
-                customers can actually find you.
+                Most standard residential garage door installations can be
+                completed in one visit once the selected door and required
+                materials are available. Installation time can vary based on the
+                door style, opener setup, removal of the existing door, and any
+                needed repairs to the framing or tracks.
               </p>
             </div>
           </details>
           <details name="exclusive">
-            <summary>Is hosting included?</summary>
+            <summary>Do you install new garage door openers?</summary>
             <div class="details-wrapper">
               <p>
-                Yes. Hosting and domain setup are included in every package. We
-                handle the technical setup so you don't have to think about it.
+                Yes. We install garage door openers along with remotes, wireless
+                keypads, safety sensors, and other compatible accessories. We
+                can help you select an opener that fits your garage door, usage
+                needs, and budget.
               </p>
             </div>
           </details>
           <details name="exclusive">
-            <summary>What counts as an edit?</summary>
+            <summary>How long does a garage door installation take?</summary>
             <div class="details-wrapper">
               <p>
-                Edits include text changes, image swaps, contact info updates,
-                button fixes, and minor section adjustments. New pages,
-                redesigns, and custom features are quoted separately.
+                Most standard residential garage door installations can be
+                completed in one visit once the selected door and required
+                materials are available. Installation time can vary based on the
+                door style, opener setup, removal of the existing door, and any
+                needed repairs to the framing or tracks.
               </p>
             </div>
           </details>
         </div>
         <div class="container">
           <div class="wrapper-md-custom">
-            <h3 class="tx-light">Need an Assessment?</h3>
+            <h3 class="tx-light">Need Garage Door Help?</h3>
             <p>
-              Schedule a thorough mechanical inspection of your current system.
+              Schedule a professional inspection to identify the issue and get
+              clear recommendations for repair, replacement, or a new
+              installation.
             </p>
             <div class="btn-group-wrapper">
-              <a href="#" class="primary-btn">Schedule Inspection</a>
+              <button
+                class="primary-btn"
+                command="show-modal"
+                commandfor="my-dialog"
+              >
+                Book a Free Estimate
+              </button>
+              <dialog id="my-dialog">
+                <!-- This form layer catches clicks outside the content box -->
+                <form method="dialog" class="backdrop-dismiss">
+                  <button aria-label="Close"></button>
+                </form>
+
+                <!-- Content container stops clicks inside from closing the modal -->
+                <div class="dialog-content">
+                  <div class="form-container">
+                    <div class="form-text-wrapper">
+                      <h3 class="fw-bold tx-primary">
+                        Get Your Free Garage Door Estimate
+                      </h3>
+                      <p>
+                        Tell us about your repair, replacement, or installation
+                        needs. We will review your request and provide a clear,
+                        no obligation estimate.
+                      </p>
+                    </div>
+                    <form
+                      class="form-wrapper"
+                      action="#"
+                      method="POST"
+                      data-netlify="true"
+                    >
+                      <label for="name"> First name</label>
+                      <input type="text" id="name" name="name" />
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" />
+                      <label for="phone">Phone Number </label>
+                      <input type="tel" id="phone" name="phone" />
+                      <label for="msg">Message</label>
+                      <textarea id="msg" name="msg" rows="2"></textarea>
+                      <button class="primary-btn" type="submit">Send</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+
+              <a href="#" class="primary-btn">Call Us Now</a>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script defer src="index.js"></script>
-  </body>
-      <footer class="site-footer">
+    <footer class="site-footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-brand">
@@ -411,8 +516,12 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 REPLACE ME - Business Name. All rights reserved.</p>
+          <p>&copy; 2026 GarageMaster. All rights reserved.</p>
+          <p>&copy; Custom-Made by Delva Web Design</p>
         </div>
       </div>
     </footer>
+
+    <script defer src="index.js"></script>
+  </body>
 </html>
