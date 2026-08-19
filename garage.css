@@ -72,8 +72,6 @@
 }
 html {
   scroll-behavior: smooth;
-  color-scheme: light dark;
-  hanging-punctuation: first last;
 }
 
 body {
@@ -82,7 +80,6 @@ body {
   font-size: var(--fs-base);
   line-height: 1.5;
   color: var(--color-darkest);
-  height: 100svh;
   scrollbar-gutter: stable;
 }
 
