@@ -219,9 +219,9 @@ li.menu-links {
     gap: var(--space-6);
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
     pointer-events: auto;
     z-index: 1000;
+    margin:0 auto;
   }
 }
 
