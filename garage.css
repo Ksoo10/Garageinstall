@@ -23,26 +23,6 @@
   --color-white: hsl(210 40% 98%); /* #f8fafc */
   --color-accent: hsl(0 66% 70%); /* #e58282 */
   --color-darkest: hsl(0 0% 20%); /* #333333 */
-  /* DARK MODE OVERRIDES */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* 1. Primary: Brightened so it remains readable on dark backgrounds */
-    --color-primary: hsl(0 80% 65%); /* #f25555 */
-
-    /* 2. Secondary: Shifted to a slightly lighter slate for card surfaces/headers */
-    --color-secondary: hsl(222 35% 18%); /* #1e293b */
-
-    /* 3. White: Becomes the main page background (Dark Charcoal instead of pure black) */
-    --color-white: hsl(
-      222 47% 11%
-    ); /* #0f172a (Reuses your dark slate color) */
-
-    /* 4. Accent: Softened to a lighter, less intense coral for subtle highlights */
-    --color-accent: hsl(0 75% 80%); /* #fca5a5 */
-
-    /* 5. Darkest: Becomes the primary body text color (Off-white/light gray) */
-    --color-darkest: hsl(210 40% 98%); /* #f8fafc */
-  }
   /* Color Palette */
   /* Spacing Scale */
   --space-0: 0;
